@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    /* border: 2px solid red; */
+    width: 98%;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h1{
+    /* border: 2px solid blue; */
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.search{
+    /* border: 2px solid blue; */
+    width: 25rem;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 100%;
+    width: 75%;
+    border: none;
+    box-shadow: inset 3px 3px 8px #cbced1,
+        inset -2px -2px 8px #cbced1;
+}
+input:hover {
+    transform: scale(1.025);
+}
+::placeholder{
+    font-size: large;
+    font-weight: 500;
+    padding-left: 13px;
+}
+button{
+    height: 100%;
+    width: 22%;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px #666;
+}
+.bottom{
+    width: 98%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.card{
+    display: flex;
+    width: 100%;
+    border: 1px solid gray;
+    height: 4rem;
+    border-left: none;
+    border-right:none;
+    display: flex;
+    justify-content: center;
+}
+#one{
+    /* border: 1px solid blue; */
+    width:6%;
+    height: 100%;
+    font-size: 2.65rem;
+    display: flex;
+    justify-content: center;
+}
+#two{
+    /* border: 1px solid blue; */
+    width:46%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+#three{
+    /* border: 1px solid blue; */
+    width:48%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    #one{
+        padding-top: 6px;
+        font-size: 1.8rem;
+        /* border: 1px solid blue ; */
+        width:12%;
+    }
+    #two{
+        font-size: .8rem;
+        width :43%;
+    }
+    #three{
+        font-size: .8rem;
+        width :45%;
+    }
+    .bottom{
+        width: 98%;
+        /* border: 1px solid blue; */
+    }
+    .search{
+        width:20rem;
+    }
+}
+
